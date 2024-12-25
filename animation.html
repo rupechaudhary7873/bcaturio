@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+    
+        button{
+            padding: 10px 20px;
+            background-color: red;
+            color: black;
+            border: none;
+            animation-name: abc;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            margin-top: 20px;
+        }
+        p{
+            animation-name: bca;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+        }
+        @keyframes abc{
+            0%{
+                background-color: aqua;
+                transform: rotate(0deg);
+            }
+            50%{
+                background-color: blue;
+                transform: rotate(30deg);
+            }
+            100%{
+                background-color: brown;
+                transform: rotate(-30deg);
+            }
+        
+        }
+        @keyframes bca{
+            100%{
+                transform: rotate(-0deg);
+            }
+            50%{
+                transform: rotate(-30deg);
+            }
+            0%{
+                transform: rotate(-30deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    
+        <button><p>BOOK NOW</p></button>
+    
+</body>
+</html>

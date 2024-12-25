@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: green;
+            overflow: hidden;
+            transform: skew(-45deg);
+        }
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            transform: skew(45deg) scale(2);
+            
+        }
+        .box:hover img{
+            transform: rotateZ('30deg') scale(1.4);
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="image/belgium-1.png" alt="">
+    </div>
+</body>
+</html>

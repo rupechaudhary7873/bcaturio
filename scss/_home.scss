@@ -1,0 +1,141 @@
+.banner{
+    .slider-items{
+        background-color: black;
+        img{
+            opacity: 0.3;
+            display: contents;
+
+        }
+        .banner-content{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            .tagline{
+                font-size: 30px;
+                font-family: $primary-font;
+                text-transform: capitalize;
+            }
+            .banner-heading{
+                font-family: $seconday-font;
+                font-size: 60px;
+                font-weight: 800;
+                text-transform: capitalize;
+                margin-bottom: 20px;
+            }
+        }
+        .custom-button{
+            margin-top: 20px;
+        }
+    }
+    .select-form{
+        height: 100px;
+        width: 1200px;
+        padding: 20px 20px;
+        border-radius: 10px;
+        background-color: #FFFFFF;
+        position: absolute;
+        left: 50%;
+        z-index: 30;
+        transform: translate(-50%,-50%);
+
+        .border{
+            display: flex;
+            text-align: center;
+            position: relative;
+            .details{
+                border: 1px solid rgba(94, 90, 90, 0.514);
+                justify-content: center;
+                padding: 15px 30px;
+                label{
+                    line-height: 30px;
+                    font-family: $primary-font;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 40px;
+                }
+                i{
+                    display: flex;
+                    position: absolute;
+                    top: 30%;
+                    font-size: 30px;
+                    color: $primary-color; 
+                }
+
+            }
+            button{
+                border: 1px solid rgb(255, 255, 255);
+                margin: 10px;
+                padding: 20px 40px;
+                background-color: $primary-color;
+                color: #FFFFFF;
+                font-family: $primary-font;
+                font-weight: 500;
+                transition-property: background;
+                transition-timing-function: linear;
+                transition-duration: 0.5s;
+                &:hover{
+                    background-color: transparent;
+                    font-weight: 500;
+                    color: $primary-color;
+                    border: 1px solid $primary-color;
+                }
+                
+            }
+            
+        }
+       
+    }
+    .left{
+        position: absolute;
+        top: 50%;
+        left: -5%;
+        z-index: 50;
+        transform: rotate(-90deg);
+        ul{
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 20px;
+            li{
+                display: flex;
+                color: white;
+                font-family: $primary-font;
+                gap: 10px;
+                img{
+                    height: 15px;
+                    width: 15px;
+                }
+               
+            }
+        }
+       
+    }
+}
+.details_2{
+.details2{
+    display: flex;
+    justify-content: space-between;
+    .title{
+        h2{
+            font-size: 45px;
+            font-weight: 800;
+            font-family: $seconday-font;
+            color: rgb(45, 55, 60);
+        }
+        p{
+            max-width: 70%;
+            color: #666666;
+            font-size: 16px;
+        }
+    }
+    .tour{
+        position: absolute;
+        align-items: center;
+        right: 5%;
+        transform: translate(-50%,-50%);
+    }
+    
+}
+}
