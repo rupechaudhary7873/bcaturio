@@ -25,11 +25,12 @@ body{
     padding: 10px 20px;
     align-items: center;
     font-weight: 400;
+    width: 150px;
     border: 1px solid $primary-color;
     transition-property: background;
     transition-duration: 0.5s;
     transition-timing-function: linear;
-    display: inline-block;    
+    display: inline-block;
     &:hover{
         background-color: transparent;
         color: $primary-color;
@@ -60,22 +61,11 @@ body{
     }
     .container{
         margin-inline: auto;
-        width: 1200px;
-        padding-block: 20px;
+        padding: 20px 80px;
     }
-    .card_banner{
-        display: grid;
-        margin: 40px;
-        grid-template-columns: repeat(3, 1fr);
-        .card{
-            .cardimages{
-                .card_details{
-                    display: flex;
-                    justify-content: space-between;
-                }
-                img{
-                    border-radius: 10px;
-                }
-            }
+    .center2{
+        position: absolute;
+        left: 40%;
+        transform: translate(-50%, -50%);
         }
-    }
+  
