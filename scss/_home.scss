@@ -32,7 +32,7 @@
     }
     .select-form{
         border-radius: 10px;
-        background-color: #f5e7e7;
+        background-color: rgb(255, 255, 255);
         position: absolute;
         left: 50%;
         transform: translate(-50%,-50%);
@@ -47,22 +47,27 @@
             justify-content: center;
             height: 50px;
             .details{
-                border: 1px solid gray;
+                border: 1px solid rgba(85, 82, 82, 0.247);
+                padding: 10px;
                 height: 90px;
                 i{
                     font-size: 20px;
                     align-items: center;
+                    color: $primary-color;
                     margin: 10px;
                 }
                 label{
-                    font-size: 16px;
+                    font-size: 14px;
+                    font-family: $primary-font;
                     margin: 10px;
                 }
                 select{
-                    margin: 10px;             
+                    margin: 10px;   
+                    border: none;          
                   }
                   input{
                     margin: 10px;
+                    border: none;
                   }
             }
             .button{

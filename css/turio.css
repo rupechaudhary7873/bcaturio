@@ -31,7 +31,7 @@
 }
 .banner .select-form {
   border-radius: 10px;
-  background-color: #f5e7e7;
+  background-color: rgb(255, 255, 255);
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -48,23 +48,28 @@
   height: 50px;
 }
 .banner .select-form .border .details {
-  border: 1px solid gray;
+  border: 1px solid rgba(85, 82, 82, 0.247);
+  padding: 10px;
   height: 90px;
 }
 .banner .select-form .border .details i {
   font-size: 20px;
   align-items: center;
+  color: #54A15D;
   margin: 10px;
 }
 .banner .select-form .border .details label {
-  font-size: 16px;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
   margin: 10px;
 }
 .banner .select-form .border .details select {
   margin: 10px;
+  border: none;
 }
 .banner .select-form .border .details input {
   margin: 10px;
+  border: none;
 }
 .banner .select-form .border .button button {
   border: 1px solid gray;
