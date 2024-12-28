@@ -57,15 +57,12 @@ body{
 
 }
 .margin-top{
-    margin: 10%;
+    margin: 100px;
     }
     .container{
         margin-inline: auto;
-        padding: 20px 80px;
+        padding: 20px 40px;
+        max-width: 1200px;
     }
-    .center2{
-        position: absolute;
-        left: 40%;
-        transform: translate(-50%, -50%);
-        }
+
   

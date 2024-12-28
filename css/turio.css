@@ -30,44 +30,47 @@
   margin-top: 20px;
 }
 .banner .select-form {
-  height: 100px;
-  width: 1200px;
-  padding: 20px 20px;
   border-radius: 10px;
-  background-color: #FFFFFF;
+  background-color: #f5e7e7;
   position: absolute;
   left: 50%;
-  z-index: 30;
   transform: translate(-50%, -50%);
+  z-index: 3;
+  height: 100px;
+  width: 1200px;
 }
 .banner .select-form .border {
-  display: flex;
-  text-align: center;
-  position: relative;
+  position: absolute;
+  top: 5%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  height: 50px;
 }
 .banner .select-form .border .details {
-  border: 1px solid rgba(94, 90, 90, 0.514);
-  justify-content: center;
-  padding: 15px 30px;
-}
-.banner .select-form .border .details label {
-  line-height: 30px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 40px;
+  border: 1px solid gray;
+  height: 90px;
 }
 .banner .select-form .border .details i {
-  display: flex;
-  position: absolute;
-  top: 30%;
-  font-size: 30px;
-  color: #54A15D;
-}
-.banner .select-form .border button {
-  border: 1px solid rgb(255, 255, 255);
+  font-size: 20px;
+  align-items: center;
   margin: 10px;
-  padding: 20px 40px;
+}
+.banner .select-form .border .details label {
+  font-size: 16px;
+  margin: 10px;
+}
+.banner .select-form .border .details select {
+  margin: 10px;
+}
+.banner .select-form .border .details input {
+  margin: 10px;
+}
+.banner .select-form .border .button button {
+  border: 1px solid gray;
+  height: 90px;
+  width: 200px;
+  margin-inline: 5px;
   background-color: #54A15D;
   color: #FFFFFF;
   font-family: "Montserrat", sans-serif;
@@ -76,7 +79,7 @@
   transition-timing-function: linear;
   transition-duration: 0.5s;
 }
-.banner .select-form .border button:hover {
+.banner .select-form .border .button button:hover {
   background-color: transparent;
   font-weight: 500;
   color: #54A15D;
@@ -211,7 +214,7 @@
 }
 .card_banner .card .cardimages .package_card .right_details {
   margin-top: 40px;
-  padding: 10px 40px;
+  padding-right: 70px;
 }
 .card_banner .card .cardimages .package_card .right_details .price_detail {
   font-family: "Barlow", sans-serif;
@@ -228,6 +231,9 @@
   font-size: 20px;
   font-weight: 800;
   padding-right: 5px;
+}
+.card_banner .card .cardimages .package_card .right_details .price #price {
+  text-decoration: line-through;
 }
 .card_banner .card .cardimages .package_card .right_details .price p {
   font-family: "Barlow", sans-serif;
@@ -342,18 +348,13 @@ body {
 }
 
 .margin-top {
-  margin: 10%;
+  margin: 100px;
 }
 
 .container {
   margin-inline: auto;
-  padding: 20px 80px;
-}
-
-.center2 {
-  position: absolute;
-  left: 40%;
-  transform: translate(-50%, -50%);
+  padding: 20px 40px;
+  max-width: 1200px;
 }
 
 header {
