@@ -151,8 +151,9 @@
             box-shadow: 5px 5px rgba(128, 128, 128, 0.192);
             .center{
                 position: absolute;
-                margin-inline: 13% auto;
+                margin-inline: 165px auto;
                 transform: translate(-50%, -50%);
+            }
                 a{
                     button{
                         padding: 8px 20px;
@@ -183,8 +184,8 @@
                         }
                     }
                 }
-            }
             .package_card{
+                color: #FFFFFF;
             .card_details{
                 display: flex;
                 justify-content: space-between;
@@ -213,19 +214,16 @@
                       &:hover{
                         background-color: $primary-color;
                         color: white;
-                        i{
-                           padding-left: 20px;
-                        }
                     }
-                    }
-                   
-            
+                
+                }
             }
            
             img{
                 border-radius: 10px
             }
         }
+        
         .right_details{
             margin-top: 40px;
             padding-right: 70px;
@@ -253,15 +251,23 @@
                     color: rgb(45, 55, 60);
                 }
         }
-        }
-        transition-property: background;
-        transition-duration: 0.5s;
-        transition-timing-function: linear;
-        &:hover{
-            height: 100%;
-            width: 100%;
-            background-color: rgba(0, 128, 0, 0.24);
-            }
+    }
+    // h3::before{
+    //     content: "";
+    //     height: 0;
+    //     width: 0;
+    //     position: absolute;
+    //     left: 50%;
+    //     transform: translate(-50%, -50%);
+    //     transition-property: background;
+    //     background-color: rgba(0, 128, 0, 0.253);
+    //     z-index: 5;
+    //     }
+    //     h3:hover::before{
+    //         height: 100%;
+    //         width: 100%;
+    //     }
+    
                   
     }
     }
@@ -307,5 +313,60 @@
     }
     }
 }
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px 20px;
+     object-fit: cover;
+    img{
+        border-radius: 5px;
+        transition: 0.5s;
+        &:hover{
+            transform: scale(1.5);
+            object-fit: cover;
+    }}
+    
+    .paris{
+        grid-column: span 2;
+        width: 100%;
+        overflow: hidden;
+    }
+    .new-zeland{
+        height: 100%;
+        width: 100%;
+        overflow: hidden;   
+    }
+    .india{
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+    .grand{
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+    .england{
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+    .cuba{
+        grid-column: span 2;
+         height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+
+}
+.background-section{
+    background: linear-gradient(rgba(0, 128, 0, 0.274),rgba(255, 0, 0, 0.123),rgba(0, 0, 0, 0.219)) , url("../image/upcoming-bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -10;
+    
+}
+
+
 
 

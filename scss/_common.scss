@@ -35,6 +35,7 @@ body{
         background-color: transparent;
         color: $primary-color;
     }
+    
     button{
                 border: 1px solid rgb(255, 255, 255);
                 margin: 10px;
@@ -57,12 +58,13 @@ body{
 
 }
 .margin-top{
-    margin: 100px;
+    margin-block: 100px;
     }
     .container{
         margin-inline: auto;
         padding: 20px 40px;
         max-width: 1200px;
     }
+ 
 
   
